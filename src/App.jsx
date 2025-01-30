@@ -1,11 +1,12 @@
-import './App.css'
+import './App.css';
+import SnowEffect from './effects/particles';
 
 function App() {
 
   return (
     <>
       <div>
-        <h1>React App</h1>
+        <SnowEffect />
       </div>
     </>
   )
