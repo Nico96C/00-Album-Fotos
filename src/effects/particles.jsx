@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Sparticles from "sparticles";
 import './EffectSnow.css';
+import HeaderNav from '../components/header';
 
 const SnowEffect = () => {
   useEffect(() => {
@@ -58,9 +59,7 @@ const SnowEffect = () => {
 
   return (
     <main style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
-      <div className="SnowText" style={{ width: "100%", height: "100%" }}>
-        HOLA MUNDO
-      </div>
+      <HeaderNav />
     </main>
   );
 };
