@@ -1,5 +1,5 @@
-import './App.css';
-import SnowEffect from './effects/particles';
+import "./App.css";
+import SnowEffect from "./effects/particles";
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
         <SnowEffect />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
