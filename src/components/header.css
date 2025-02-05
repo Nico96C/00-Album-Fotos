@@ -19,6 +19,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -34,6 +35,18 @@ nav {
   color: white;
   user-select: none;
   animation: blinkingGlow 1.5s infinite alternate;
+}
+
+.navbar-btn {
+  background: none;
+  border: none;
+  padding: 0 !important;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.navbar-btn:hover {
+  cursor: pointer;
 }
 
 .navbar-brand {

@@ -16,9 +16,9 @@ const HeaderNav = () => {
 
   return (
     <nav className="navbar">
-      <p className="navbar-title">Header</p>
+      <p className="navbar-title">Album</p>
       <div className="navbar-links">
-        <button onClick={toggleAudio}>
+        <button className="navbar-btn" onClick={toggleAudio}>
           {isPlaying ? (
             <img src={AudioOn} width={24} height={24} />
           ) : (
