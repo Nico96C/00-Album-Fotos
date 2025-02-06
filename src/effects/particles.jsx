@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Sparticles from "sparticles";
 import './EffectSnow.css';
 import HeaderNav from '../components/header';
+import PhotoAlbum from "../components/PhotoAlbum";
 
 const SnowEffect = () => {
   useEffect(() => {
@@ -60,6 +61,7 @@ const SnowEffect = () => {
   return (
     <main style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
       <HeaderNav />
+      <PhotoAlbum />
     </main>
   );
 };

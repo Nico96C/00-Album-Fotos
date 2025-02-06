@@ -11,3 +11,8 @@ main {
   color: #fff;
   text-shadow: 0 0 5px #fff;
 }
+
+.sparticles {
+  position: absolute;
+  z-index: -1;
+}
