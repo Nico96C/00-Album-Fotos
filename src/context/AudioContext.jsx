@@ -9,7 +9,7 @@ export const AudioProvider = ({ children }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    audio.volume = 0.3;
+    audio.volume = 0.25;
     audio.loop = true;
 
     const startAudioOnInteraction = () => {

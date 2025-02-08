@@ -1,16 +1,20 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useRef } from "react";
 import "./PhotoAlbumModal.css";
 import pageSound from "../music/page.wav";
+import PageFlip from "react-pageflip";
 
 const pages = [
-  { left: "Página 1 - Izquierda", right: "Página 1 - Derecha" },
-  { left: "Página 2 - Izquierda", right: "Página 2 - Derecha" },
-  // Agrega más páginas según sea necesario
+  "https://ik.imagekit.io/m3g4ID/Category1/1.png?updatedAt=1727977637217",
+  "https://ik.imagekit.io/m3g4ID/Category1/2.png?updatedAt=1727977630354",
+  "https://ik.imagekit.io/m3g4ID/Category1/3.png?updatedAt=1727977629481",
+  "https://ik.imagekit.io/m3g4ID/Category1/4.webp?updatedAt=1727977627844",
+  "https://picsum.photos/300/400?random=5",
+  "https://picsum.photos/300/400?random=6",
 ];
 
 const PhotoAlbumModal = ({ onClose }) => {
-  const [currentPage, setCurrentPage] = useState(0);
+  const flipBook = useRef(null);
 
   const playPageSound = () => {
     const audio = new Audio(pageSound);
@@ -18,40 +22,36 @@ const PhotoAlbumModal = ({ onClose }) => {
     audio.play();
   };
 
-  const handleNext = () => {
-    if (currentPage < pages.length - 1) {
-      playPageSound();
-      setCurrentPage(currentPage + 1);
-    }
-  };
-
-  const handlePrev = () => {
-    if (currentPage > 0) {
-      playPageSound();
-      setCurrentPage(currentPage - 1);
-    }
-  };
-
   return (
-    <div className="photo-album-modal">
-      <div className="modal-content">
-        <button className="close-button" onClick={onClose}>
-          X
-        </button>
-        <div className="page">
-          <div className="page-left">{pages[currentPage].left}</div>
-          <div className="page-right">{pages[currentPage].right}</div>
-        </div>
-        <div className="navigation">
-          <button onClick={handlePrev} disabled={currentPage === 0}>
-            Anterior
-          </button>
-          <button
-            onClick={handleNext}
-            disabled={currentPage === pages.length - 1}
+    <div className="photo-album-background">
+      <div className="photo-album-modal">
+        <div className="modal-content">
+          <PageFlip
+            ref={flipBook}
+            width={1000}
+            height={1200}
+            size="stretch"
+            mobileScrollSupport={true}
+            onFlip={playPageSound}
           >
-            Siguiente
-          </button>
+            {pages.map((src, index) => (
+              <div key={index} className="page">
+                <img src={src} alt={`Page ${index + 1}`} />
+              </div>
+            ))}
+          </PageFlip>
+  
+          <div className="navigation">
+            <button onClick={() => flipBook.current.pageFlip().flipPrev()}>
+              Anterior
+            </button>
+            <button onClick={() => flipBook.current.pageFlip().flipNext()}>
+              Siguiente
+            </button>
+            <button className="close-button" onClick={onClose}>
+              X
+            </button>
+          </div>
         </div>
       </div>
     </div>
