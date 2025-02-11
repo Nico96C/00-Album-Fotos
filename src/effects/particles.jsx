@@ -5,6 +5,7 @@ import HeaderNav from '../components/header';
 import PhotoAlbum from "../components/PhotoAlbum";
 
 const SnowEffect = () => {
+
   useEffect(() => {
     let colors = {
       color1: "rgba(255,255,255,1)",

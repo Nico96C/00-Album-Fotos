@@ -70,6 +70,12 @@
   object-fit: cover;
 }
 
+.cover-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .img-title {
   position: absolute;
   font-size: 32px;
@@ -107,6 +113,15 @@
 
 .navigation button:hover {
   background: #555;
+}
+
+.photo-album-modal {
+  transform: scale(1);
+  transition: transform .8s ease-in-out;
+}
+
+.photo-album-modal.closing {
+  transform: scale(0);
 }
 
 @keyframes openModal {

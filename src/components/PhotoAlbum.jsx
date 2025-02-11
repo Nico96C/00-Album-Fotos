@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import './PhotoAlbum.css';
-import PhotoAlbumModal from './PhotoAlbumModal';
-import openSound from '../music/open.wav';
+import { useState } from "react";
+import "./PhotoAlbum.css";
+import PhotoAlbumModal from "./PhotoAlbumModal";
+import openSound from "../music/open.wav";
 
 const PhotoAlbum = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,10 @@ const PhotoAlbum = () => {
 
   return (
     <>
-      <div className="photo-album" onClick={handleOpen}>
+      <div
+        className={`photo-album ${isOpen ? "hidden" : ""}`} // Oculta cuando isOpen es true
+        onClick={handleOpen}
+      >
         <p>Álbum de Fotos</p>
       </div>
       {isOpen && <PhotoAlbumModal onClose={handleClose} />}

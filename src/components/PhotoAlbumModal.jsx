@@ -1,14 +1,15 @@
 /* eslint-disable react/prop-types */
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./PhotoAlbumModal.css";
 import pageSound from "../music/page.wav";
 import PageFlip from "react-pageflip";
 
 const pages = [
   {
-    src: "https://ik.imagekit.io/m3g4ID/WhatsApp%20Image%202024-08-30%20at%2015.05.12%20(1).jpeg?updatedAt=1739201799584",
-    title: "Título",
-    description: "Descripción de portada",
+    src: "https://ik.imagekit.io/m3g4ID/cover2.jpg?updatedAt=1739281224346",
+    title: "Portada",
+    description: "Descripción de la portada",
+    isCover: true,
   },
   {
     src: "https://ik.imagekit.io/m3g4ID/Category1/1.png?updatedAt=1727977637217",
@@ -48,6 +49,8 @@ const pages = [
 ];
 
 const PhotoAlbumModal = ({ onClose }) => {
+  const [isClosing, setIsClosing] = useState(false);
+  
   const flipBook = useRef(null);
 
   const playPageSound = () => {
@@ -56,9 +59,14 @@ const PhotoAlbumModal = ({ onClose }) => {
     audio.play();
   };
 
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(onClose, 800);
+  };
+
   return (
-    <div className="photo-album-background">
-      <div className="photo-album-modal">
+    <div className={`photo-album-background ${isClosing ? "closing" : ""}`}>
+      <div className={`photo-album-modal ${isClosing ? "closing" : ""}`}>
         <div className="modal-content">
           <PageFlip
             ref={flipBook}
@@ -67,9 +75,13 @@ const PhotoAlbumModal = ({ onClose }) => {
             size="stretch"
             mobileScrollSupport={true}
             onFlip={playPageSound}
+            showCover={true}
           >
             {pages.map((page, index) => (
-              <div key={index} className="page">
+              <div
+                key={index}
+                className={`page ${page.isCover ? "cover-page" : ""}`}
+              >
                 <img src={page.src} alt={`Page ${index + 1}`} />
                 <h2 className="img-title">{page.title}</h2>
                 <p className="img-description">{page.description}</p>
@@ -84,7 +96,7 @@ const PhotoAlbumModal = ({ onClose }) => {
             <button onClick={() => flipBook.current.pageFlip().flipNext()}>
               Siguiente
             </button>
-            <button className="close-button" onClick={onClose}>
+            <button className="close-button" onClick={handleClose}>
               X
             </button>
           </div>

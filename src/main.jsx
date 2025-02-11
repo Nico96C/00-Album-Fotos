@@ -6,8 +6,8 @@ import { AudioProvider } from "./context/AudioContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <AudioProvider>
-      <App />
-    </AudioProvider>
+      <AudioProvider>
+        <App />
+      </AudioProvider>
   </StrictMode>
 );
