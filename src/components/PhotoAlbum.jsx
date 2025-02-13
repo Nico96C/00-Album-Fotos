@@ -24,7 +24,7 @@ const PhotoAlbum = () => {
   return (
     <>
       <div
-        className={`photo-album ${isOpen ? "hidden" : ""}`} // Oculta cuando isOpen es true
+        className={`photo-album ${isOpen ? "hidden" : ""}`}
         onClick={handleOpen}
       >
         <p>Álbum de Fotos</p>
