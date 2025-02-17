@@ -1,0 +1,154 @@
+* {
+    color: black;
+}
+
+.main-options-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-options-container.active {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  gap: 30px;
+}
+
+.option-card {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  padding: 15px;
+  background: #f0f0f0;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+/* 🎨 Nuevo efecto hover */
+.option-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.main-options-container.active .option-card {
+  width: 150px;
+  height: 60px;
+  font-size: 14px;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+/* Círculos */
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-right: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-options-container.active .circle {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
+/* El componente abierto toma el 80% de la pantalla */
+.expanded-component {
+  width: 80%;
+  height: 60vh;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.album .circle {
+  background: #ff5722;
+}
+
+.carta .circle {
+  background: #ff9800;
+}
+
+.nosotros .circle {
+  background: #0097a7;
+}
+
+.option-content {
+  flex-grow: 1;
+}
+
+/* ✨ Nuevo efecto hover en la preview */
+.preview {
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+.option-card:hover .preview {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animación escalonada */
+@keyframes slideIn {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.option-card:nth-child(1) {
+  animation: slideIn 1s ease-out forwards;
+}
+
+.option-card:nth-child(2) {
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.option-card:nth-child(3) {
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.content-area {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}

@@ -75,7 +75,7 @@ const PhotoAlbumModal = ({ onClose }) => {
   const [dimensions, setDimensions] = useState({ width: 1000, height: 1600 });
 
   const flipBook = useRef(null);
-  const modalRef = useRef(null); // Referencia para detectar tamaño del modal
+  const modalRef = useRef(null);
 
   const playPageSound = () => {
     const audio = new Audio(pageSound);
@@ -127,7 +127,7 @@ const PhotoAlbumModal = ({ onClose }) => {
     if (flipBook.current) {
       flipBook.current.pageFlip().flip(1);
       setIsCoverPage(false);
-      updateSize(); // ⚡ Forzar actualización al cambiar la página
+      updateSize();
     }
   };
 
