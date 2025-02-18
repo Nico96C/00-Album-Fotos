@@ -4,8 +4,7 @@ import PhotoAlbumModal from "./PhotoAlbumModal";
 import openSound from "../music/open.wav";
 
 const PhotoAlbum = () => {
-  const [isOpen, setIsOpen] = useState(true);
-  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const playOpenSound = () => {
     const audio = new Audio(openSound);
@@ -15,11 +14,11 @@ const PhotoAlbum = () => {
 
   const handleOpen = () => {
     playOpenSound();
-    setIsOpen2(true);
+    setIsOpen(true);
   };
 
   const handleClose = () => {
-    setIsOpen(true);
+    setIsOpen(false);
   };
 
   return (
@@ -30,7 +29,7 @@ const PhotoAlbum = () => {
       >
         <p>Álbum de Fotos</p>
       </div>
-      {isOpen2 && <PhotoAlbumModal onClose={handleClose} />}
+      {isOpen && <PhotoAlbumModal onClose={handleClose} />}
     </>
   );
 };

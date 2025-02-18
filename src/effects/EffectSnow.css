@@ -2,6 +2,9 @@ main {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-image: 
+    linear-gradient(rgba(165, 196, 211, 0.3), #293743f2), url("https://ik.imagekit.io/m3g4ID/Fondo%20nuevo.png?updatedAt=1739890447255");
+  background-size: cover;
 }
 
 .SnowText {
