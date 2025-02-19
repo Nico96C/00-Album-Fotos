@@ -18,7 +18,27 @@ const MainOptions = () => {
   };
 
   return (
-    <div className="main-options-wrapper">
+    <div className={`main-options-wrapper ${activeOption ? "active" : ""}`}>
+      <div className="wave-container">
+      <svg
+        className="wave"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#6b5b95" />
+      <stop offset="100%" stopColor="#957dad" />
+    </linearGradient>
+  </defs>
+        <path
+          d="M 0 100 Q 100 100, 100 0 L 100 100 L 0 100 Z"
+          fill="url(#waveGradient)"
+        />
+      </svg>
+    </div>
+      
       <div className={`main-options-container ${activeOption ? "active" : ""}`}>
         {["album", "carta", "nosotros"].map((option, index) => (
           <div
