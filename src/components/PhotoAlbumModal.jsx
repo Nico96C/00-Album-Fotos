@@ -85,7 +85,7 @@ const PhotoAlbumModal = ({ onClose }) => {
 
   const handleClose = () => {
     setIsClosing(true);
-    setTimeout(onClose, 800);
+    setTimeout(onClose, 200);
   };
 
   const handleFlip = (e) => {
