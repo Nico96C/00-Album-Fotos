@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import "./PhotoAlbumModal.css";
 import pageSound from "../music/page.wav";
 import PageFlip from "react-pageflip";
+import ffxSound from "../music/FFXOut.mp3";
 
 const pages = [
   {
@@ -76,33 +77,43 @@ const PhotoAlbumModal = ({ onClose }) => {
 
   const flipBook = useRef(null);
   const modalRef = useRef(null);
+  const lastFlipPage = useRef(null);
 
   const playPageSound = () => {
     const audio = new Audio(pageSound);
     audio.volume = 1;
     audio.play();
   };
+  const playFFXSound = () => {
+    const audio = new Audio(ffxSound);
+    audio.volume = 1;
+    audio.play();
+  };
 
   const handleClose = () => {
     setIsClosing(true);
-    setTimeout(onClose, 200);
+    playFFXSound();
+    setTimeout(onClose, 50);
   };
 
   const handleFlip = (e) => {
-    playPageSound();
-    setIsCoverPage(e.data === 0);
+    if (lastFlipPage.current !== e.data) {
+      playPageSound();
+      lastFlipPage.current = e.data;
+      setIsCoverPage(e.data === 0);
+    }
   };
 
   const updateSize = () => {
     if (modalRef.current) {
       const modalWidth = modalRef.current.clientWidth;
       const modalHeight = modalRef.current.clientHeight;
-  
+
       const newWidth = isCoverPage ? modalWidth * 0.6 : modalWidth * 0.8;
       const newHeight = isCoverPage ? modalHeight * 1.2 : modalHeight * 1.2;
-  
+
       setDimensions({ width: newWidth, height: newHeight });
-  
+
       // 🛑 Verificar si flipBook está definido antes de actualizar
       if (flipBook.current && flipBook.current.pageFlip()) {
         setTimeout(() => {
@@ -134,7 +145,9 @@ const PhotoAlbumModal = ({ onClose }) => {
   return (
     <div className={`photo-album-background ${isClosing ? "closing" : ""}`}>
       <div className="navigation">
-        <button className="close-button" onClick={handleClose}>X</button>
+        <button className="close-button" onClick={handleClose}>
+          X
+        </button>
         <div className="page-navigation">
           <button onClick={() => flipBook.current.pageFlip().flipPrev()}>
             Anterior
@@ -158,18 +171,23 @@ const PhotoAlbumModal = ({ onClose }) => {
             showCover={true}
           >
             {pages.map((page, index) => (
-              <div key={index} className={`page ${page.isCover ? "cover-page" : ""}`}>
+              <div
+                key={index}
+                className={`page ${page.isCover ? "cover-page" : ""}`}
+              >
                 {page.isCover ? (
                   <>
-                    <h2 className="img-title">{page.title}</h2>
-                    <p className="img-description">{page.description}</p>
+                    <div>
+                      <h2 className="img-title">{page.title}</h2>
+                      <p className="img-description">{page.description}</p>
+                    </div>
                   </>
                 ) : (
                   <>
                     <img src={page.src[0]} alt={`Page ${index + 1} - Img 1`} />
                     <img src={page.src[1]} alt={`Page ${index + 1} - Img 2`} />
                     <h2 className="img-title">{page.title}</h2>
-                    <p className="img-description">{page.description}</p>
+                    {/* <p className="img-description">{page.description}</p> */}
                   </>
                 )}
               </div>
