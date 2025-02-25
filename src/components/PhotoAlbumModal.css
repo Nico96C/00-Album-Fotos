@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Jacquard+12&display=swap");
 
 .photo-album-background {
   position: fixed;
@@ -72,11 +73,21 @@
 
 .click-to-open {
   position: absolute;
-  bottom: 20px;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 10px;
+  color: #ad6c4a;
   border-radius: 5px;
+  font-family: "Charm", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 500px;
+  line-height: 1.2;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black, -1px 0px 0 black, 1px 0px 0 black, 0px -1px 0 black,
+    0px 1px 0 black;
 }
 
 .close-button {

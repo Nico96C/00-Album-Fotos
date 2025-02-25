@@ -198,7 +198,10 @@ const PhotoAlbumModal = ({ onClose }) => {
         {isCoverPage && (
           <div className="fake-cover" onClick={skipToFirstPage}>
             <img src={pages[0].src} alt="Portada del álbum" />
-            <div className="click-to-open">📖 Haz clic para abrir</div>
+            <div className="click-to-open">
+              ALBUM DE FOTOS:
+              Recorrido años atras.
+            </div>
           </div>
         )}
       </div>

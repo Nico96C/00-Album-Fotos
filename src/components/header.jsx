@@ -1,5 +1,5 @@
 import "./header.css";
-import buttonSound from "../music/buttonSound.wav";
+import buttonFFX from "../music/FFXIn.mp3";
 import { useContext } from "react";
 import { AudioContext } from "../context/AudioContext";
 import AudioOff from "../img/sound-off.svg";
@@ -9,7 +9,7 @@ const HeaderNav = () => {
   const { isPlaying, toggleAudio } = useContext(AudioContext);
 
   const playSound = () => {
-    const audio = new Audio(buttonSound);
+    const audio = new Audio(buttonFFX);
     audio.volume = 0.35;
     audio.play();
   };
@@ -29,13 +29,7 @@ const HeaderNav = () => {
           Home
         </a>
         <a className="navbar-brand" href="#" onMouseEnter={playSound}>
-          More
-        </a>
-        <a className="navbar-brand" href="#" onMouseEnter={playSound}>
-          Section
-        </a>
-        <a className="navbar-brand" href="#" onMouseEnter={playSound}>
-          End
+          Sobre este Regalo
         </a>
       </div>
     </nav>

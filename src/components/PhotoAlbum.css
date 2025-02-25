@@ -15,14 +15,39 @@
   position: relative;
   top: 7%;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7), 
+              -4px -4px 8px rgba(255, 255, 255, 0.1);
   text-align: center;
+  border-left: 12px solid rgba(80, 40, 20, 0.8);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  perspective: 1000px;
+}
+
+/* Simular los bordes del libro */
+.photo-album::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent);
+  border-radius: 10px 0 0 10px;
+}
+
+.photo-album::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent);
+  border-radius: 0 10px 10px 0;
 }
 
 .photo-album:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 1);
 }
 
 .photo-album p {
