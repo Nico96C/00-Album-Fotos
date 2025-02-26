@@ -20,7 +20,6 @@
   align-items: center;
   width: 80vw;
   height: 90vh;
-  background: white;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
@@ -52,9 +51,11 @@
 .fake-cover {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
   width: 50%;
   height: 100%;
+  border-radius: 0px;
+  border-left: 16px solid rgba(80, 40, 20, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +63,11 @@
   opacity: 1;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 0.5s ease;
-  z-index: -1;
+  z-index: 1;
+}
+
+.fake-cover:hover {   
+  opacity: 0;
 }
 
 .fake-cover img {
