@@ -18,166 +18,209 @@ const pages = [
     ],
     title: "Título 1",
     description: "Descripción de la página 1",
+    onlyOnePage: true,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/14.jpg?updatedAt=1740580432956",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/41.jpg?updatedAt=1740580438058",
     ],
     title: "Título 2",
     description: "Descripción de la página 2",
+    onlyOnePage: false,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/1.jpg?updatedAt=1740580431206",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/16.jpg?updatedAt=1740580433008",
     ],
     title: "Título 3",
     description: "Descripción de la página 3",
+    onlyOnePage: false,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/35.jpg?updatedAt=1740580437067",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/4.jpg?updatedAt=1740580431193",
     ],
     title: "Título 4",
     description: "Descripción de la página 4",
+    onlyOnePage: false,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/40.jpg?updatedAt=1740580438004",
     ],
     title: "Título 5",
     description: "Descripción de la página 5",
+    onlyOnePage: true,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/8.jpg?updatedAt=1740580431235",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/6.jpg?updatedAt=1740580431277",
     ],
     title: "Título 6",
     description: "Descripción de la página 6",
+    onlyOnePage: false,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/39.jpg?updatedAt=1740580438049",
     ],
     title: "Título 7",
     description: "Descripción de la página 7",
+    onlyOnePage: true,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/7.jpg?updatedAt=1740580431250",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/5.jpg?updatedAt=1740580431268",
     ],
     title: "Título 8",
     description: "Descripción de la página 1",
+    onlyOnePage: false,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/38.jpg?updatedAt=1740580438797",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/34.jpg?updatedAt=1740580436850",
     ],
     title: "Título 9",
     description: "Descripción de la página 2",
+    onlyOnePage: false,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/36.jpg?updatedAt=1740580437997",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/37.jpg?updatedAt=1740580438167",
     ],
     title: "Título 10",
     description: "Descripción de la página 3",
+    onlyOnePage: false,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/24.jpg?updatedAt=1740580435407",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/18.jpg?updatedAt=1740580433455",
     ],
     title: "Título 11",
     description: "Descripción de la página 4",
+    onlyOnePage: false,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/13.jpg?updatedAt=1740580433011",
     ],
     title: "Título 12",
     description: "Descripción de la página 5",
+    onlyOnePage: true,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/17.jpg?updatedAt=1740580433469",
     ],
     title: "Título 13",
     description: "Descripción de la página 6",
+    onlyOnePage: true,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/26.jpg?updatedAt=1740580435565",
     ],
     title: "Título 14",
     description: "Descripción de la página 7",
+    onlyOnePage: true,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/25.jpg?updatedAt=1740580435517",
     ],
     title: "Título 15",
     description: "Descripción de la página 1",
+    onlyOnePage: true,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/33.jpg?updatedAt=1740580436608",
+    ],
+    title: "Título 15",
+    description: "Descripción de la página 1",
+    onlyOnePage: true,
+  },
+  {
+    src: [
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/23.jpg?updatedAt=1740580435599",
     ],
     title: "Título 16",
     description: "Descripción de la página 2",
+    onlyOnePage: true,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/32.jpg?updatedAt=1740580435555",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/9.jpg?updatedAt=1740580431041",
     ],
     title: "Título 17",
     description: "Descripción de la página 3",
+    onlyOnePage: false,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/19.jpg?updatedAt=1740580433376",
     ],
     title: "Título 18",
     description: "Descripción de la página 4",
+    onlyOnePage: true,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/42.jpg?updatedAt=1740580438198",
     ],
     title: "Título 19",
     description: "Descripción de la página 5",
+    onlyOnePage: true,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/20.jpg?updatedAt=1740580433535",
     ],
     title: "Título 20",
     description: "Descripción de la página 6",
+    onlyOnePage: true,
   },
   {
     src: [
-      "https://ik.imagekit.io/m3g4ID/Category1/1front.png?updatedAt=1727977637376",
-      "https://ik.imagekit.io/m3g4ID/Category1/1back.png?updatedAt=1727977637577",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/21.jpg?updatedAt=1740580433184",
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/28.jpg?updatedAt=1740580435585",
     ],
     title: "Título 21",
     description: "Descripción de la página 7",
+    onlyOnePage: false,
+  },
+  {
+    src: [
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/27.jpg?updatedAt=1740580435508",
+    ],
+    title: "Título 22",
+    description: "Descripción de la página 7",
+    onlyOnePage: true,
+  },
+  {
+    src: [
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/29.jpg?updatedAt=1740580435513",
+    ],
+    title: "Título 23",
+    description: "Descripción de la página 7",
+    onlyOnePage: true,
+  },
+  {
+    src: [
+      "https://ik.imagekit.io/m3g4ID/Photos-Album/30.jpg?updatedAt=1740580435570",
+    ],
+    title: "Título 23",
+    description: "Descripción de la página 7",
+    onlyOnePage: true,
   },
 ];
 
@@ -296,16 +339,20 @@ const PhotoAlbumModal = ({ onClose }) => {
                 ) : (
                   <>
                     {page.src[0] && (
-                      <img
-                        src={page.src[0]}
-                        alt={`Page ${index + 1} - Img 1`}
-                      />
+                        <img
+                          src={page.src[0]}
+                          alt={`Page ${index + 1} - Img 1`}
+                          className={`page-img${
+                            page.onlyOnePage ? "-one" : ""
+                          }`}
+                        />
                     )}
                     {page.src[1] && (
-                      <img
-                        src={page.src[1]}
-                        alt={`Page ${index + 1} - Img 2`}
-                      />
+                        <img
+                          src={page.src[1]}
+                          alt={`Page ${index + 1} - Img 2`}
+                          className="page-img"
+                        />
                     )}
                     <h2 className="img-title">{page.title}</h2>
                     {/* <p className="img-description">{page.description}</p> */}
