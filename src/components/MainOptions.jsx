@@ -2,6 +2,7 @@ import { useState } from "react";
 import PhotoAlbum from "./PhotoAlbum";
 import "./MainOptions.css";
 import FFXaudio from "../music/FFXIn.mp3";
+import Letter from "./Letter";
 
 const MainOptions = () => {
   const [activeOption, setActiveOption] = useState(null);
@@ -79,7 +80,7 @@ const MainOptions = () => {
           {activeOption === "album" ? (
             <PhotoAlbum />
           ) : activeOption === "carta" ? (
-            <h2>Carta</h2>
+            <Letter />
           ) : (
             <h2>Nosotros</h2>
           )}
