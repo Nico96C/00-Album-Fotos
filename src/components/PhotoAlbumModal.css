@@ -66,7 +66,7 @@
   z-index: 1;
 }
 
-.fake-cover:hover {   
+.fake-cover:hover {
   opacity: 0;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .page .page-img {
-  width: 70.90%;
+  width: 70.9%;
   height: 45%;
   padding: 10px;
   margin-top: 5px;
@@ -125,14 +125,12 @@
 }
 
 .page .page-img-one {
-  position: relative;
   width: 65%;
   height: 75%;
   object-fit: contain;
   padding: 20px;
   border: 1px solid gray;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  z-index: 1;
 }
 
 .cover-page img {
@@ -159,16 +157,16 @@
 
 .img-title-2 {
   font-size: 42px;
-  font-family: "Jacquard 12", serif;
-  font-weight: 400;
+  font-family: "Charm", serif;
+  font-weight: 600;
   font-style: normal;
   color: #212121;
 }
 
 .img-description {
   font-size: 32px;
-  font-family: "Jacquard 12", serif;
-  font-weight: 400;
+  font-family: "Charm", serif;
+  font-weight: 600;
   font-style: normal;
   color: #212121;
 }
@@ -250,7 +248,8 @@
   border-radius: 10px;
 }
 
-.check-img {
+.check-img,
+.check-img-one {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -261,6 +260,60 @@
   border: none;
   cursor: pointer;
   z-index: 1000;
+  overflow: hidden;
+}
+
+.check-img-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  z-index: 1000;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Unificando el efecto foil en ambas variantes */
+.check-img::before,
+.check-img-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 250%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05) 20%,
+    rgba(255, 255, 255, 0.3) 35%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.3) 65%,
+    rgba(255, 255, 255, 0.05) 80%
+  );
+
+  transform: skewX(-20deg);
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Aplicar la animación al hover */
+.check-img:hover::before,
+.check-img-one:hover::before {
+  opacity: 1;
+  animation: foilShine 1.5s linear infinite;
+}
+
+/* Animación continua de brillo */
+@keyframes foilShine {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
 }
 
 @keyframes openModal {

@@ -8,8 +8,10 @@ import ffxSound from "../music/FFXOut.mp3";
 const pages = [
   {
     src: "https://ik.imagekit.io/m3g4ID/cover2.jpg?updatedAt=1739281224346",
-    title: " '..Las fotos nos permiten revivir cosas pasadas y atesorar los momentos, logrando volver sobre nuestros pasos..' ",
-    description: "Este álbum de fotos representa que cada imagen es una ventana al pasado, permitiéndonos recapitular y ver lo que fuimos. Haz clic para abrir y déjate llevar a conocer, ver desde tu propia vista con quien estas a dia de hoy ",
+    title:
+      " '..Las fotos nos permiten revivir cosas pasadas y atesorar los momentos, logrando volver sobre nuestros pasos..' ",
+    description:
+      "Este álbum de fotos representa que cada imagen es una ventana al pasado, permitiéndonos recapitular y ver lo que fuimos. Haz clic para abrir y déjate llevar a conocer, ver desde tu propia vista con quien estas a dia de hoy ",
     isCover: true,
   },
   {
@@ -346,13 +348,16 @@ const PhotoAlbumModal = ({ onClose }) => {
                     <div className="cover-content">
                       <h2 className="img-title-2">{page.title}</h2>
                       <p className="img-description">{page.description}</p>
-                      <p className="img-description">By tu novio</p>
+                      <p className="img-description">De parte de tu novio</p>
                     </div>
                   </>
                 ) : (
                   <>
                     {page.src[0] && (
-                      <button className="check-img" onClick={() => openImageModal(page.src[0])}>
+                      <button
+                        className={`check-img${page.onlyOnePage ? "-one" : ""}`}
+                        onClick={() => openImageModal(page.src[0])}
+                      >
                         <img
                           src={page.src[0]}
                           alt={`Page ${index + 1} - Img 1`}
@@ -363,7 +368,10 @@ const PhotoAlbumModal = ({ onClose }) => {
                       </button>
                     )}
                     {page.src[1] && (
-                      <button className="check-img" onClick={() => openImageModal(page.src[1])}>
+                      <button
+                        className="check-img"
+                        onClick={() => openImageModal(page.src[1])}
+                      >
                         <img
                           src={page.src[1]}
                           alt={`Page ${index + 1} - Img 2`}
@@ -372,7 +380,6 @@ const PhotoAlbumModal = ({ onClose }) => {
                       </button>
                     )}
                     <h2 className="img-title">{page.title}</h2>
-                    {/* <p className="img-description">{page.description}</p> */}
                   </>
                 )}
               </div>
@@ -396,7 +403,11 @@ const PhotoAlbumModal = ({ onClose }) => {
             <span className="close" onClick={closeImageModal}>
               &times;
             </span>
-            <img src={selectedImage} alt="Imagen completa" className="modal-img" />
+            <img
+              src={selectedImage}
+              alt="Imagen completa"
+              className="modal-img"
+            />
           </div>
         </div>
       )}
