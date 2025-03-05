@@ -149,10 +149,12 @@
 
 .img-title {
   font-size: 32px;
-  font-family: "Jacquard 12", serif;
-  font-weight: 400;
+  font-family: "Charm", serif;
+  font-weight: 600;
   font-style: normal;
   color: #212121;
+  user-select: none;
+  margin: 5px !important;
 }
 
 .img-title-2 {
@@ -161,6 +163,7 @@
   font-weight: 600;
   font-style: normal;
   color: #212121;
+  user-select: none;
 }
 
 .img-description {
