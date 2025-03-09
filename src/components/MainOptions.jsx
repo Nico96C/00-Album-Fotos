@@ -2,7 +2,7 @@ import { useState } from "react";
 import PhotoAlbum from "./PhotoAlbum";
 import "./MainOptions.css";
 import FFXaudio from "../music/FFXIn.mp3";
-import Letter from "./Letter";
+import LetterWrapper from "./LetterWrapper";
 
 const MainOptions = () => {
   const [activeOption, setActiveOption] = useState(null);
@@ -64,10 +64,10 @@ const MainOptions = () => {
             {hoveredOption === option && (
               <div className="preview">
                 {option === "album"
-                  ? "📷 Ver álbum"
+                  ? "📷"
                   : option === "carta"
-                  ? "📜 Ver carta"
-                  : "ℹ️ Sobre nosotros"}
+                  ? "📜"
+                  : "ℹ️"}
               </div>
             )}
           </div>
@@ -80,7 +80,7 @@ const MainOptions = () => {
           {activeOption === "album" ? (
             <PhotoAlbum />
           ) : activeOption === "carta" ? (
-            <Letter />
+            <LetterWrapper />
           ) : (
             <h2>Nosotros</h2>
           )}

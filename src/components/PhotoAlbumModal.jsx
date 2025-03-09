@@ -11,7 +11,7 @@ const pages = [
     title:
       " '..Las fotos nos permiten revivir cosas pasadas y atesorar los momentos, logrando volver sobre nuestros pasos..' ",
     description:
-      "Este álbum de fotos representa que cada imagen es una ventana al pasado, permitiéndonos recapitular y ver lo que fuimos. Haz clic para abrir y déjate llevar a conocer, ver desde tu propia vista con quien estas a dia de hoy ",
+      `Este álbum de fotos representa en cada imagen es una ventana mi pasado, dejandonos recapitular y pudiendo ver lo que he sido años atras. Haz clic para abrir y déjate llevar a conocer, ver desde tu propia vista con quien estas a dia de hoy `,
     isCover: true,
   },
   {
