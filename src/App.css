@@ -48,13 +48,6 @@ main > .text {
   mix-blend-mode: overlay;
 }
 
-h1 {
-  font-size: 6vw;
-  font-weight: 100;
-  font-family: "Mountains of Christmas", cursive;
-  margin: 0 auto 15px;
-}
-
 .dg.ac {
   z-index: 2 !important;
 }

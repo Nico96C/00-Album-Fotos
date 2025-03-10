@@ -18,19 +18,13 @@ const HeaderNav = () => {
     <nav className="navbar">
       <p className="navbar-title">Album</p>
       <div className="navbar-links">
-        <button className="navbar-btn" onClick={toggleAudio}>
+        <button className="navbar-btn" onClick={toggleAudio} onMouseEnter={playSound}>
           {isPlaying ? (
-            <img src={AudioOn} width={24} height={24} />
+            <img src={AudioOn} width={30} height={30} />
           ) : (
-            <img src={AudioOff} width={24} height={24} />
+            <img src={AudioOff} width={30} height={30} />
           )}
         </button>
-        <a className="navbar-brand" href="#" onMouseEnter={playSound}>
-          Home
-        </a>
-        <a className="navbar-brand" href="#" onMouseEnter={playSound}>
-          Sobre este Regalo
-        </a>
       </div>
     </nav>
   );

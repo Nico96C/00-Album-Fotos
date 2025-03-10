@@ -41,7 +41,7 @@ const MainOptions = () => {
     </div>
       
       <div className={`main-options-container ${activeOption ? "active" : ""}`}>
-        {["album", "carta", "nosotros"].map((option, index) => (
+        {["album", "carta", "Te cuento"].map((option, index) => (
           <div
             key={option}
             className={`option-card ${option} ${
