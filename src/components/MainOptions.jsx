@@ -3,6 +3,7 @@ import PhotoAlbum from "./PhotoAlbum";
 import "./MainOptions.css";
 import FFXaudio from "../music/FFXIn.mp3";
 import LetterWrapper from "./LetterWrapper";
+import About from "./About";
 
 const MainOptions = () => {
   const [activeOption, setActiveOption] = useState(null);
@@ -41,7 +42,7 @@ const MainOptions = () => {
     </div>
       
       <div className={`main-options-container ${activeOption ? "active" : ""}`}>
-        {["album", "carta", "Te cuento"].map((option, index) => (
+        {["album", "carta", "leeme"].map((option, index) => (
           <div
             key={option}
             className={`option-card ${option} ${
@@ -82,7 +83,7 @@ const MainOptions = () => {
           ) : activeOption === "carta" ? (
             <LetterWrapper />
           ) : (
-            <h2>Nosotros</h2>
+            <About />
           )}
         </div>
       )}

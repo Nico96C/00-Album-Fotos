@@ -62,6 +62,41 @@
   font-style: normal;
 }
 
+.subcontainer-letter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.text-letter {
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: "Charm", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.img-letter {
+  background-color: #ffe4ec;
+  border-radius: 50%;
+  border: 2px solid #d48db0;
+  box-shadow: 4px 4px 0 #c07090, inset 0 0 8px #ffddee;
+  padding: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-letter:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 6px 6px 12px #d48db0;
+  cursor: pointer;
+}
+
 
 /*MODAL*/
 
