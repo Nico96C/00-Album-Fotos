@@ -72,12 +72,12 @@ const Letter = () => {
           <div className="subcontainer-letter">
             <p className="text-letter">
               {" "}
-              Parece como si el tiempo fuera a detenerse al estar con vos pero
-              tambien a la vez es acelerado, que vivimos las cosas con tanto
-              gusto en el momento que cada segundo se disfruta al mismo tiempo
-              que parece un abrir y cerrar de ojos de todo eso, la sensacion de
-              compartir algo hasta lo mas simple con vos se siente de todas las
-              formas posibles{" "}
+              Parece como si el tiempo estando acá juntos fuera tan poco siendo
+              ya años de compartir cosas, que vivimos las cosas con tanto gusto
+              en el momento que cada segundo se disfruta con lentitud al mismo
+              tiempo que parece un abrir y cerrar de ojos de lo que vivimos, la
+              Sensación de compartir algo hasta lo más simple con vos se siente
+              de todas las formas inimaginables{" "}
             </p>
             <img
               className="img-letter"
@@ -97,14 +97,16 @@ const Letter = () => {
             />
             <p className="text-letter">
               {" "}
-              Estan siendo ya 4 años de vivir las cosas de una forma tan feroz,
-              de pasar por estados de todo tipo... Vivir las cosas sobretodo! El
-              poder ver como alguien, solo vos podes llegar a hasta lo mas
+              Están siendo ya 4 años de vivir las cosas de una forma tan
+              Especial, de pasar por estados de todo tipo... Vivir las cosas
+              sobre todo! El poder ver como una persona puede llegar modificar
+              Tantas cosas en uno mismo. Solo vos podés llegar a hasta lo más
               profundo de mi ser para entender como sacarme una sonrisa o
-              hacerme sentir especial, darme una importancia que siento
-              inmerecida pero que con el tiempo se ha sentido cada vez mas
-              propia el poder sentirme orgulloso o feliz por ser quien soy y que
-              todo eso lo veo la mujer que amo{" "}
+              hacerme sentir lo más valioso de este mundo, darme una importancia
+              que siento inmerecida, pero que con el tiempo se ha sentido cada
+              vez más propia y real el poder sentirme orgulloso o feliz por ser
+              quien soy además que todo eso lo logre percibir, lo haga resaltar
+              la mujer que amo{" "}
             </p>
             <br />
           </div>
@@ -114,14 +116,14 @@ const Letter = () => {
               {" "}
               Cada año que ha pasado, fueron tantas cosas que llevar y mejorar,
               hemos tenido nuestros altibajos y mejores... Como peores momentos
-              en los que debiamos afrontar situaciones que nos eran ¿injustas?
-              agotadoras capaz, pero que por suerte a la par podiamos aprender,
-              mejorar, sentirnos mejor con nosotros mismos! hemos crecido mucho
-              en este tiempo y creo que lo mas agradable es poder compartir con
+              en los que debíamos afrontar situaciones que nos eran ¿injustas?
+              agotadoras capaz, pero que por suerte a la par podíamos aprender,
+              mejorar, sentirnos mejor con nosotros mismos! Hemos crecido mucho
+              en este tiempo y creo que lo más agradable es poder compartir con
               alguien, que nos ama de esta forma, nos entiende, nos arropa, cree
               en nosotros para alcanzar lo que queramos y mil cosas que tenemos
-              en conjunto entre ambos.. Es todo un viaje y un reconocimiento a
-              lo que es tener un vinculo con tu pajera{" "}
+              en conjunto entre ambos. Es todo un viaje y un reconocimiento a lo
+              que es tener un vínculo con tu pajera{" "}
             </p>
             <img
               className="img-letter"
@@ -141,15 +143,15 @@ const Letter = () => {
             />
             <p className="text-letter">
               {" "}
-              Obvio, siento que esto no son mas que habladurias mias y
-              pensamiento que van.. vienen.. A mi cabeza, una palabra tras otra,
-              que en el mero espacio web este, donde el codigo se agolpa no
-              logra terminar de reflejar lo importante que has sido para mi, lo
-              que generas en los demas y lo bien que hace tu presencia en esta
-              relacion con un chico normal de Argentina. Hasta el pensar y
+              Obvio, siento que esto no son más que habladurías mías y
+              pensamiento que van.. Vienen.. A mi cabeza, una palabra tras otra,
+              que en el mero espacio web este, donde el código se agolpa no
+              logra terminar de reflejar lo importante que has sido para mí, lo
+              que generas en los demás y lo bien que hace tu presencia en esta
+              Relación con un chico normal de Argentina. Hasta el pensar y
               revivir lo que ha sido un año como el anterior donde nos hemos
               visto por primera vez, hemos tocado, sentido y logrado vivir este
-              amor... Si, creo que puede quedar corto con haberlo vivido y
+              amor... Sí, creo que puede quedar corto con haberlo vivido y
               pudiendo decirlo hasta con nuestros cuerpos{" "}
             </p>
             <br />
@@ -158,16 +160,16 @@ const Letter = () => {
           <div className="subcontainer-letter">
             <p className="text-letter">
               {" "}
-              Pensaras ¿Este es del chico que me enamore? Pues puede ser, uno
+              Pensarás ¿Este es del chico que me enamore? Pues puede ser, uno
               que solo va dejando caer como lo hacen los dedos en cada tecla
-              estos pensamiento... Lo que me haces sentir, lo que vivo cada dia,
-              es algo inexpresable.. Capaz indescriptible con unas pocas
-              palabras, hasta capaz necesitaria una pequeña novela para llegar a
-              explicar todo esto. Una forma donde siento que hemos redefinido el
-              termino de amar entre nosotros y todo aquello que lo rodea, y te
-              digo... Es pensar en vos o el verte para que en un simple instante
-              se genere una cascada de piropos y una inminente sonrisa en mi
-              rostro{" "}
+              estos pensamientos... Lo que me haces sentir, lo que vivo cada
+              día, es algo inexpresable.. Capaz indescriptible con unas pocas
+              palabras, hasta capaz necesitaría escribir esto cientos de veces
+              para poder llegar a expresar todo lo que siento. Una forma donde
+              pienso que hemos redefinido él termino de querer entre nosotros, y
+              te digo... Es pensar en vos o el verte para que en un simple
+              instante se genere una cascada de piropos y una inminente sonrisa
+              en mi rostro{" "}
             </p>
             <img
               className="img-letter"
@@ -178,26 +180,21 @@ const Letter = () => {
             <br />
           </div>
 
-            <p className="text-letter">
-              {" "}
-              Es justo ya poder ir dejando la carta aqui, pero obvio... Lo
-              ultimo que quiero dejarte en claro, es lo muy orgulloso que estoy
-              de decir que sos mi Novia luego de 4 años, la persona que has
-              querido ser, volver a ser vos pero con una lucha constante contra
-              tantas cosas pero que se ve que vas avanzando. Lo que sos como
-              Mujer, cada cosas que te propones a hacer, tu parte formativa,
-              laboral, maternal, ese impetud... Constancia y el no bajar los
-              brazos aunque estes cansada. Aparte, por sobre todas las cosas
-              Rocio, estoy feliz de que seas quien queres ser y justamente es a
-              esa persona a quien amo y respecto.{" "}
-            </p>
-            <img
-              className="img-letter"
-              src={PhotoSix}
-              width={250}
-              height={300}
-            />
-            <br />
+          <p className="text-letter">
+            {" "}
+            Es justo ya poder ir dejando la carta aquí, pero obvio... Lo último
+            que quiero dejarte en claro, es lo muy orgulloso que estoy de decir
+            con quien comparto mi dia diario desde hace ya 4 bonitos años, la
+            persona que sos, lo que fuiste y seras amor, lo que has transitado
+            tanto conmigo como sin mi. Lo que sos como Mujer, cada cosa que te
+            propones a hacer, tu parte formativa, laboral, maternal, ese
+            Ímpetu... Constancia y el no bajar los brazos aunque estés cansada.
+            Aparte, contento por algo importante Rocío, estoy feliz de ser esa
+            persona que quieres a tu lado y justamente yo de tener a quien amo y
+            respeto esta junto a mi cada dia.{" "}
+          </p>
+          <img className="img-letter" src={PhotoSix} width={250} height={300} />
+          <br />
 
           <p className="text-letter">
             {" "}

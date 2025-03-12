@@ -16,7 +16,7 @@ const HeaderNav = () => {
 
   return (
     <nav className="navbar">
-      <p className="navbar-title">Album</p>
+      <p className="navbar-title">4toAniversario</p>
       <div className="navbar-links">
         <button className="navbar-btn" onClick={toggleAudio} onMouseEnter={playSound}>
           {isPlaying ? (

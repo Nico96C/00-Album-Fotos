@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Jacquard+12&display=swap");
+
+.text-about {
+    font-family: "Charm", sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 40px 40px 20px !important;
+    text-align: center;
+}
