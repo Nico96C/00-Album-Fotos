@@ -357,6 +357,7 @@ const PhotoAlbumModal = ({ onClose }) => {
                       <button
                         className={`check-img${page.onlyOnePage ? "-one" : ""}`}
                         onClick={() => openImageModal(page.src[0])}
+                        style={{ backgroundColor: "#f5ebe8" }}
                       >
                         <img
                           src={page.src[0]}
@@ -371,6 +372,7 @@ const PhotoAlbumModal = ({ onClose }) => {
                       <button
                         className="check-img"
                         onClick={() => openImageModal(page.src[1])}
+                        style={{ backgroundColor: "#f5ebe8" }}
                       >
                         <img
                           src={page.src[1]}
